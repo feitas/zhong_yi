@@ -1,2 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_zhong_yi_zhong_yi,zhong_yi.zhong_yi,model_zhong_yi_zhong_yi,,1,0,0,0
+access_zy_zhongyao_wei,zy_zhongyao_wei,model_zy_zhongyao_wei,,1,0,0,0
+access_zy_zhongyao_qi,zy_zhongyao_qi,model_zy_zhongyao_qi,,1,0,0,0
+access_zy_zhongyao_jing,zy_zhongyao_jing,model_zy_zhongyao_jing,,1,0,0,0
+
+access_zy_zhenshi,zy_zhenshi,model_zy_zhenshi,,1,0,0,0
+
+access_zy_linchuang,zy_lin_chuang,model_zy_lin_chuang,,1,0,0,0
+access_zy_lingchuangyaofang,zy_lin_chuang_yao_fang,model_zy_lin_chuang_yao_fang,,1,0,0,0

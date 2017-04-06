@@ -1,25 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-
-		<record model="ir.ui.view" id="view_zy_zhongyao_list">
-	        <field name="name">中药</field>
-	        <field name="model">product.template</field>
-	        <field name="arch" type="xml">
-		        <tree>
-		            <field name="name"/>
-		            <field name="zy_pinyin"/>
-		            <field name="zy_wei"/>
-		            <field name="zy_qi"/>
-		            <field name="zy_jing"/>
-		        </tree>
-	        </field>
-	    </record>
+	<record model="ir.ui.view" id="view_zy_zhongyao_list">
+        <field name="name">中药</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+	        <tree>
+	            <field name="name"/>
+	            <field name="zy_pinyin"/>
+	            <field name="zy_wei"/>
+	            <field name="zy_qi"/>
+	            <field name="zy_jing"/>
+	        </tree>
+        </field>
+    </record>
 
 
+    <record model="ir.ui.view" id="view_zy_zhongyao_inherit_form">
+    	<field name="name">中药</field>
+    	<field name="model">product.template</field>
+    	<field name="inherit_id" ref="product.product_template_only_form_view" />
+    	<field name="arch" type="xml">
+			<xpath expr="//page[1]" position="before">
+				<page string="中药学">
+					<group>
+						<group>
+							<field name="zy_wei" widget="many2many_tags"/>
+							<field name="zy_qi" widget="many2many_tags"/>
+							<field name="zy_jing" widget="many2many_tags"/>
+						</group>
+						<group>
+							
+						</group>
+						
+					</group>
+				</page>
+			</xpath>
+    	</field>
+    </record>
 
 
 
 
-	    
-    </data>
 </odoo>

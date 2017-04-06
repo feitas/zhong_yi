@@ -28,3 +28,4 @@ class ZyZhongYaoJing(models.Model):
 	_name = "zy.zhongyao.jing"
 
 	name = fields.Char("名称")
+

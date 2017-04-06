@@ -18,6 +18,42 @@
     		<field name="name">酸</field>
     	</record>
 
+        <record id="zy_data_qi_01" model="zy.zhongyao.qi">
+            <field name="name">寒</field>
+        </record>
+
+        <record id="zy_data_qi_02" model="zy.zhongyao.qi">
+            <field name="name">热</field>
+        </record>
+
+        <record id="zy_data_qi_03" model="zy.zhongyao.qi">
+            <field name="name">温</field>
+        </record>
+
+        <record id="zy_data_qi_04" model="zy.zhongyao.qi">
+            <field name="name">凉</field>
+        </record>
+
+        <record id="zy_data_jing_01" model="zy.zhongyao.jing">
+            <field name="name">肝</field>
+        </record>
+
+        <record id="zy_data_jing_02" model="zy.zhongyao.jing">
+            <field name="name">心</field>
+        </record>
+
+        <record id="zy_data_jing_03" model="zy.zhongyao.jing">
+            <field name="name">脾</field>
+        </record>
+
+        <record id="zy_data_jing_04" model="zy.zhongyao.jing">
+            <field name="name">肺</field>
+        </record>
+
+        <record id="zy_data_jing_05" model="zy.zhongyao.jing">
+            <field name="name">肾</field>
+        </record>
+
 
 
     </data>
