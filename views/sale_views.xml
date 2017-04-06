@@ -1,0 +1,18 @@
+<odoo>
+	<data>
+
+		<record id="view_zy_zhenduan_form" model="ir.ui.view">
+    		<field name="name">诊断</field>
+	        <field name="model">sale.order</field>
+	        <field name="inherit_id" ref="sale.view_order_form" />
+	        <field name="arch" type="xml">
+		        <xpath expr="//page[1]" position="before">
+		        	<page string="诊断记录">
+		        		<field name="zy_zhenduan_jilu" />
+		        	</page>
+		        </xpath>
+	        </field>
+    	</record>
+
+	</data>
+</odoo>

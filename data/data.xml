@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+    	<record id="zy_data_wei_01" model="zy.zhongyao.wei">
+    		<field name="name">辛</field>
+    	</record>
+    	<record id="zy_data_wei_02" model="zy.zhongyao.wei">
+    		<field name="name">苦</field>
+    	</record>
+    	<record id="zy_data_wei_03" model="zy.zhongyao.wei">
+    		<field name="name">甘</field>
+    	</record>
+    	<record id="zy_data_wei_04" model="zy.zhongyao.wei">
+    		<field name="name">咸</field>
+    	</record>
+    	<record id="zy_data_wei_05" model="zy.zhongyao.wei">
+    		<field name="name">酸</field>
+    	</record>
+
+
+
+    </data>
+</odoo>

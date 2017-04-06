@@ -1,0 +1,45 @@
+<odoo>
+	<data>
+
+		<record model="ir.ui.view" id="view_zy_linchuang_list">
+	        <field name="name">临床</field>
+	        <field name="model">zy.lin.chuang</field>
+	        <field name="arch" type="xml">
+		        <tree>
+		            <field name="name"/>
+		            <field name="year"/>
+		            <field name="source"/>
+		        </tree>
+	        </field>
+	    </record>
+
+
+	    <record model="ir.ui.view" id="view_zy_linchuang_form">
+	        <field name="name">临床</field>
+	        <field name="model">zy.lin.chuang</field>
+	        <field name="arch" type="xml">
+		        <form>
+		            <sheet>
+		            	<group>
+		            		<group>
+		            			<field name="name" />
+		            			<field name="source" />
+		            		</group>
+		            		<group>
+		            			<field name="year" />
+		            		</group>
+		            	</group>
+		            	<field name="yao_fang_ids">
+		            		<tree editable="1">
+		            			<field name="name" />
+		            			<field name="qty" />
+		            		</tree>
+		            	</field>
+		            </sheet>
+		        </form>
+	        </field>
+	    </record>
+
+
+    </data>
+</odoo>

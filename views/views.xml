@@ -1,0 +1,15 @@
+<odoo>
+	<data>
+
+		<record id="view_zy_zhenshi_tree" model="ir.ui.view">
+			<field name="name">诊室</field>
+	        <field name="model">zy.zhenshi</field>
+	        <field name="arch" type="xml">
+	        	<tree editable="top">
+	        		<field name="name" />
+	        	</tree>
+	        </field>
+		</record>
+
+	</data>
+</odoo>

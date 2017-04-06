@@ -1,0 +1,51 @@
+<odoo>
+	<data>
+
+
+		<record id="view_zy_crm_lead_tree" model="ir.ui.view">
+			<field name="name">挂号</field>
+	        <field name="model">crm.lead</field>
+	        <field name="inherit_id" ref="crm.crm_case_tree_view_leads" />
+	        <field name="arch" type="xml">
+		        <field name="contact_name" position="before">
+		        	<field name="user_id" />
+		        	<field name="team_id" />
+		        	<field name="zy_book_datetime" />
+		        	<field name="zy_department" />
+		        	<field name="zy_employee" />
+		        </field>
+		        <field name="phone" position="after">
+		        	<field name="type" />
+		        </field>
+		        <field name="city" position="attributes">
+		        	<attribute name="invisible">True</attribute>
+		        </field>
+		        <field name="email_from" position="attributes">
+		        	<attribute name="invisible">True</attribute>
+		        </field>
+		        <field name="team_id" position="attributes">
+		        	<attribute name="invisible">True</attribute>
+		        </field>
+		        <field name="country_id" position="attributes">
+		        	<attribute name="invisible">True</attribute>
+		        </field>
+	        </field>
+		</record>
+
+		<record id="view_zy_crm_lead_form" model="ir.ui.view">
+    		<field name="name">挂号</field>
+	        <field name="model">crm.lead</field>
+	        <field name="inherit_id" ref="crm.crm_case_form_view_leads" />
+	        <field name="arch" type="xml">
+		        <field name="description" position="before">
+		        	<group>
+		        		<field name="zy_book_datetime" />
+		        		<field name="zy_department" />
+		        		<field name="zy_employee" />
+		        	</group>
+		        </field>
+	        </field>
+    	</record>
+
+	</data>
+</odoo>

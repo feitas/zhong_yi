@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+
+		<record model="ir.ui.view" id="view_zy_zhongyao_list">
+	        <field name="name">中药</field>
+	        <field name="model">product.template</field>
+	        <field name="arch" type="xml">
+		        <tree>
+		            <field name="name"/>
+		            <field name="zy_pinyin"/>
+		            <field name="zy_wei"/>
+		            <field name="zy_qi"/>
+		            <field name="zy_jing"/>
+		        </tree>
+	        </field>
+	    </record>
+
+
+
+
+
+
+	    
+    </data>
+</odoo>

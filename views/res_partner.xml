@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+
+    	<record id="view_zy_res_partner_form" model="ir.ui.view">
+    		<field name="name">患者</field>
+	        <field name="model">res.partner</field>
+	        <field name="inherit_id" ref="base.view_partner_form" />
+	        <field name="arch" type="xml">
+		        <field name="function" position="before">
+		        	<field name="zy_kahao" />
+		        </field>
+	        </field>
+    	</record>
+    </data>
+</odoo>
